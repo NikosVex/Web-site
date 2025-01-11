@@ -1,0 +1,426 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NAVIGATION */
+
+.nav {
+	padding: 10px 0;
+	background-color: DarkCyan;
+	color: white;
+	letter-spacing: normal;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.logo:hover {
+	opacity: 0.8;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.nav-list__link {
+  color: white;
+  transition: opacity 0.2s ease-in;
+  text-decoration: none;
+}
+
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+
+.nav-list__link--active {
+  position: relative;
+}
+
+.nav-list__link--active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+/* HEADER */
+
+.header {
+	position: relative;
+	/* Определяем модель flex-box для блока .header */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+	width: 100%;
+	min-height: 680px;
+	background-color: LightSeaGreen;
+}
+
+.header-title {
+	margin: 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 1.3;
+	text-align: center;
+	color: white;
+}
+
+.header-subtitle {
+	margin: 0;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: white;
+}
+
+.button-start {
+	margin-bottom: 80px;
+	display: inline-block;
+	padding: 15px 35px;
+	border-radius: 35px;
+	border: 3px solid white;
+	background: white;
+	font-weight: bold;
+	font-size: 24px;
+	color: LightSeaGreen;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	transition: all 0.2s ease-in;
+}
+
+.button-start:hover {
+  background: LightSeaGreen;
+  color: white;
+}
+
+.header-arrow {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 30px;
+}
+
+/* COMMUNITY-PETS */
+
+.community-pets {
+	padding-top: 80px;
+	padding-bottom: 115px;
+}
+
+.community-pets-header {
+	margin: 0;
+	margin-bottom: 70px;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.3;
+	text-align: center;
+	color: LightSeaGreen;
+}
+
+.community-pets-cards-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	margin-bottom: 30px;
+	max-width: 540px;
+	color: LightSeaGreen;
+	box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.5);
+	transition: all 0.2s ease-in;
+}
+
+.card:hover {
+	transform: translateY(-15px);
+}
+
+.card-link {
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	color: lightseagreen;
+}
+
+.card-link:hover {
+	color: orangered;
+}
+
+.card:last-child, .card:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+
+.card-img {
+	margin-bottom: 20px;
+}
+
+.card-title {
+	margin: 0;
+	margin-bottom: 13px;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 1.3;
+}
+
+.card p {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+/* FOOTER */
+
+.footer {
+	padding-top: 45px;
+	padding-bottom: 100px;
+	background-color: LightSeaGreen;
+	color: white;
+}
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-copyright {
+	max-width: 350px;
+	line-height: 1.3;
+}
+
+.footer-copyright-name {
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.footer-copyright p {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.footer-icons {
+	max-width: 350px;
+}
+
+.footer-icons p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.footer-icons-row {
+	display: flex;
+	align-items: center;
+}
+
+.footer-channel {
+	max-width: 350px;
+}
+
+.footer-button {
+	display: inline-block;
+	padding: 15px 35px;
+	border: 3px solid white;
+	border-radius: 35px;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+	background-color: white;
+	color: LightSeaGreen;
+}
+
+.footer-channel p {
+	margin: 15px 0;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+/* ABOUT BOT */
+
+.about-bot {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	color: LightSeaGreen;
+	text-align: center;
+}
+
+.about-bot-header {
+	margin: 0;
+	margin-bottom: 40px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 1.3;
+}
+
+.about-bot-text {
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+	text-align: justify;
+}
+
+.about-bot-text p {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* DEVELOPMENT */
+
+.development {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	color: LightSeaGreen;
+	text-align: center;
+}
+
+.development-header {
+	margin: 0;
+	margin-bottom: 40px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 1.3;
+}
+
+.development-text {
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+	text-align: justify;
+}
+
+.development-text p {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.aiogram-img {
+	margin-bottom: 50px;
+}
+
+/* PETS */
+
+.pet {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	text-align: center;
+	color: LightSeaGreen;
+}
+
+.pet-header {
+	margin: 0;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.3;
+}
+
+.pet-img {
+	margin-bottom: 50px;
+}
+
+.pet-description {
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 750px;
+}
+
+.pet-description p {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.button-back {
+	display: inline-block;
+	padding: 15px 35px;
+	border: 3px solid orangered;
+	border-radius: 35px;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: orangered;
+	transition: all 0.2s ease-in;
+}
+
+.button-back:hover {
+	background-color: orangered;
+	color: white;
+}

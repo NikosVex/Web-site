@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="NixVexillum">
+	<title>О боте</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/media.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="nav">
+		<div class="container">
+			<div class="nav-row">
+				<a class="logo" href="./index.html">Покажи питомца</a>
+				<ul class="nav-list">
+					<li class="nav-list__item"><a class="nav-list__link" href="./index.html">Главная</a></li>
+					<li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="./about_bot.html">О боте</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="./development.html">Разработка</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main class="about-bot">
+		<div class="container">
+			<h1 class="about-bot-header">Основная информация о боте</h1>
+			<div class="about-bot-text">
+				<p>
+					И так, что же делает Telegram-бот и для чего он вообще нужен? <b>Основная идея бота</b> - дать возможность пользователям делиться друг с другом своими питомцами. То есть в боте реализована <b>система добавления питомцев</b> в базу данных (всех добавленных питомцев проверяет администрация, прежде чем показать питомца другим людям, он должен пройти проверку) и, соответственно, есть <b>система просмотра питомцев</b>: вы можете посмотреть случайных питомцев, которые буду выбираться из базы данных, либо вы можете найти питомца по его имени или по имени пользователя, который его добавил.
+				</p>
+				<p>
+					Также можно <b>лайкать питомцев и сохранять их в избранное</b> (посмотреть избранных питомцев можно в своем аккаунте).
+				</p>
+				<p>
+					Самые популярные питомцы будут попадать на главную страницу этого сайта!
+				</p>
+				<p>
+					Для того, чтобы узнать самых залайканых питомцев, существует <b>рейтинг</b>, в котором находятся имена 10 животных с самым большим количеством лайков.
+				</p>
+				<p>
+					В боте есть <b>3 секретных питомца</b>, которых можно увидеть, если написать секретное слово, попробуйте их узнать!
+				</p>
+			</div>
+			<a class="button-back" href="./index.html">
+			< Вернуться на главную
+			</a>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-copyright footer-col">
+					<div class="footer-copyright-name">© NixVexillum</div>
+					<p>Разработчик Telegram-ботов</p>
+				</div>
+				<div class="footer-icons footer-col">
+					<p>Мои социальные сети:</p>
+					<div class="footer-icons-row">
+						<a href="https://github.com/NikosVex" class="footer-icon">
+							<img src="./images/footer/github-icon.svg" alt="github-icon">
+						</a>
+					</div>
+				</div>
+				<div class="footer-channel footer-col">
+					<a class="footer-button" href="https://t.me/+2mXYyDgV7ggwOWE6">
+						Telegram-канал
+					</a>
+					<p>Узнать подробнее о создании бота</p>
+				</div>
+			</div>
+		</div>
+	</footer>	
+
+</body>
+</html>

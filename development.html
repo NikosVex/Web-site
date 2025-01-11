@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="NixVexillum">
+	<title>Разработка бота</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/media.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="nav">
+		<div class="container">
+			<div class="nav-row">
+				<a class="logo" href="./index.html">Покажи питомца</a>
+				<ul class="nav-list">
+					<li class="nav-list__item"><a class="nav-list__link" href="./index.html">Главная</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="./about_bot.html">О боте</a></li>
+					<li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="./development.html">Разработка</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main class="development">
+		<div class="container">
+			<h1 class="development-header">Разработка бота "Покажи питомца"</h1>
+			<div class="development-text">
+				<p>
+					Бот написан на языке программирования <b>Python</b> с использованием следующих библиотек:<br> 
+					1. <b>aiogram 3</b> - библиотека для разработки Telegram-ботов на Python.<br>
+					2. <b>SQLAlchemy 2</b> - библиотека для написания запросов к базе данных не на SQL, а сразу на Python.
+				</p>
+				<p>
+					Бот использует для хранения различной информации базу данных <b>PostgreSQL</b>, я думаю, это самая практичная и удобная БД для разработки.
+				</p>
+				<p>
+					Разработка бота "Покажи питомца" началась 8 декабря 2024 года и, по факту, была завершена спустя месяц, 8 января 2025 года, бот скоро будет полноценно выпущен на VPS-сервер для беспрерывной работы.
+				</p>
+				<p>
+					До создания бота с питомцами я изучал две эти библиотеки и писал более простых ботов, например бот с печньками с предсказаниями.
+				</p>
+				<p>
+					А этот сайт, на котором вы сейчас находитесь, был написан в рамках практической работы по информатике по HTML и CSS.
+				</p>
+			</div>
+			<div>
+				<img src="./images/development/aiogram.png" alt="aiogram" class="aiogram-img">
+			</div>
+			<a class="button-back" href="./index.html">
+			< Вернуться на главную
+			</a>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-copyright footer-col">
+					<div class="footer-copyright-name">© NixVexillum</div>
+					<p>Разработчик Telegram-ботов</p>
+				</div>
+				<div class="footer-icons footer-col">
+					<p>Мои социальные сети:</p>
+					<div class="footer-icons-row">
+						<a href="https://github.com/NikosVex">
+							<img src="./images/footer/github-icon.svg" alt="github-icon">
+						</a>
+					</div>
+				</div>
+				<div class="footer-channel footer-col">
+					<a class="footer-button" href="https://t.me/+2mXYyDgV7ggwOWE6">
+						Telegram-канал
+					</a>
+					<p>Узнать подробнее о создании бота</p>
+				</div>
+			</div>
+		</div>
+	</footer>	
+
+</body>
+</html>

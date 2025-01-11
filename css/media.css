@@ -1,0 +1,145 @@
+@media (max-width: 1140px) {
+	.card {
+		width: calc(50% - 15px);
+	}
+
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.footer-row {
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-col {
+		margin-bottom: 30px;
+	}
+
+	.footer-col:first-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 760px) {
+	.header-title {
+		font-size: 32px;
+	}
+
+	.header-subtitle {
+		font-size: 14px;
+	}
+
+	.button-start {
+		font-size: 18px;
+	}
+
+	.community-pets {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.community-pets-header {
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+
+	.community-pets-cards-wrapper {
+		justify-content: center;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card-link {
+		padding: 15px;
+	}
+
+	.card:nth-last-child(2) {
+		margin-bottom: 30px;
+	}
+
+	.card-img {
+		margin-bottom: 10px;
+	}
+
+	.card-title {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.card p {
+		font-size: 14px;
+	}
+
+	.footer-copyright-name {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.footer-copyright p {
+		font-size: 14px;
+	}
+
+	.footer-icons p {
+		font-size: 14px;
+	}
+
+	.footer-channel p {
+		font-size: 14px;
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	.about-bot {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.about-bot-header {
+		font-size: 32px;
+	}
+
+	.about-bot-text p {
+		font-size: 14px;
+	}
+
+	.development {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.development-header {
+		font-size: 32px;
+	}
+
+	.development-text p {
+		font-size: 14px;
+	}
+
+
+	.pet {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.pet-header {
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.pet-img {
+		margin-bottom: 20px;
+	}
+
+	.pet-description {
+		margin-bottom: 40px;
+	}
+
+	.pet-description p {
+		font-size: 16px;
+	}
+}
